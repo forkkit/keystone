@@ -29,7 +29,7 @@ const _atTracking = ({ created = true, updated = true }) => ({
     };
   }
 
-  const newResolveInput = ({ resolvedData, operation }) => {
+  hooks.resolveInput = composeHook(hooks.resolveInput, ({ resolvedData, operation }) => {
     const dateNow = new Date().toISOString();
     if (operation === 'create') {
       // create mode
@@ -51,9 +51,7 @@ const _atTracking = ({ created = true, updated = true }) => ({
       }
     }
     return resolvedData;
-  };
-  const originalResolveInput = hooks.resolveInput;
-  hooks.resolveInput = composeHook(originalResolveInput, newResolveInput);
+  });
   return { fields, hooks, ...rest };
 };
 
