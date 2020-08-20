@@ -1,5 +1,21 @@
 # @keystonejs/api-tests
 
+## 7.0.3
+
+### Patch Changes
+
+- [`d492986dc`](https://github.com/keystonejs/keystone/commit/d492986dc90bbdac6961c7fc1e8ae1ea6664466d) [#3412](https://github.com/keystonejs/keystone/pull/3412) Thanks [@timleslie](https://github.com/timleslie)! - Updated tests to compared sorted results.
+
+* [`c906858bb`](https://github.com/keystonejs/keystone/commit/c906858bb76630f284332b9532a17de75c0c0f33) [#3404](https://github.com/keystonejs/keystone/pull/3404) Thanks [@singhArmani](https://github.com/singhArmani)! - Updated filter and CRUD tests for `Color` field type.
+
+* Updated dependencies [[`25f50dadc`](https://github.com/keystonejs/keystone/commit/25f50dadc07d888de18d485244c84d17462dce2e), [`d38c9174f`](https://github.com/keystonejs/keystone/commit/d38c9174f8146ad6e268be87cf5d54d5074bc593), [`e8b2e4772`](https://github.com/keystonejs/keystone/commit/e8b2e477206acffb143f19fb14be1e3b4cd0eb91)]:
+  - @keystonejs/keystone@14.0.0
+  - @keystonejs/fields@17.0.0
+  - @keystonejs/adapter-knex@11.0.2
+  - @keystonejs/adapter-mongoose@9.0.3
+  - @keystonejs/test-utils@8.0.1
+  - @keystonejs/auth-password@5.1.14
+
 ## 7.0.2
 
 ### Patch Changes
